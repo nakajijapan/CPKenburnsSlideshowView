@@ -75,6 +75,8 @@ typedef NS_ENUM(NSInteger, CPKenburnsSlideshowViewOrder) {
     for (NSInteger i = 0; i < 3; ++i) {
         CPKenburnsView *kenburnsView = [[CPKenburnsView alloc] initWithFrame:self.bounds];
         kenburnsView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        kenburnsView.backgroundColor = [UIColor whiteColor];
+
         [self.kenburnsViews insertObject:kenburnsView atIndex:0];
         [self addSubview:kenburnsView];
 
